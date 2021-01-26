@@ -1,9 +1,12 @@
-// Psuedocode for 05 Homeworks Scheduler 
 
-// incorporate style classes with JS 
 
-// Reference currentDay to display current date and time on calendar 
-// Us
-// come up for way to call momant js
+var timeBlocks = $(".container");
 
-console.log(moment().hour());
+var timeDisplay = moment().format('MMMM Do YYYY');
+
+var timeDiv = $("#currentDay");
+timeDiv.append(timeDisplay);
+
+var saveButton = document.querySelectorAll("button");
+
+
