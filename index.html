@@ -26,13 +26,33 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- date and time goes here -->
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <!-- Timeblocks go here using divs -->
+      <!-- Each row should have an id so that is kniws when to call js past pres future classes -->
+      <div class="row">
+        <!-- this will hold the hour col -->
+        <div class="col-md-1">
+
+        </div>
+        <!-- Text area.. insert tasks -->
+      <textarea class="col-md-10">
+
+      </textarea>
+      <!-- This is the save button with icon from fontawesome -->
+      <button class="btn saveBtn col-md-1">
+        <i class="far fa-save" >
+
+        </i>
+
+      </button>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js" > </script>
   </body>
 </html>
