@@ -16,11 +16,15 @@ User your mouse to navigate around the page and enter your activities in their r
 * JQuery
 * Moment.js
 
+## Demo 
+![](dayplanner.png)
+
 ## Authors
 Alma Aziz
 
 ## Link
-Visit here: 
+Visit here: https://ayannaaziz.github.io/05-Workday-Scheduler/
+
 
 ## License 
 MIT License
