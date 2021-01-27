@@ -95,3 +95,24 @@ $("button").on("click", function(event) {
     localStorage.setItem("textarea8", textArea8);
     localStorage.setItem("textarea9", textArea9);
 });
+
+//function to check current time and update the time block colors accordingly 
+function hourUpdater() {
+    var currentHour = moment().hours();
+    $(".time-block").each(function() {
+        var blockHour = parseInt($(this).attr("id").split(" ")[0]);
+
+        if (blockHour < currentHour) {
+            $(this).addClass("past");
+        } else if (blockHour === currentHour) {
+            $(this).removeClass("past");
+            $(this).addClass("present");
+        } else {
+            $(this).removeClass("past");
+            $(this).removeClass("present");
+            $(this).addClass("future");
+        }
+    });
+}
+
+hourUpdater();
